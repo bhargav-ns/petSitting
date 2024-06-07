@@ -1,0 +1,32 @@
+Instructions:
+Exercise 1: Set up the scaffolding - HTML
+- Write the basic structure of the HTML file. 
+What is the bare minimum we need to get this website to work?
+- Let’s try and replicate the low fidelity wireframe we created.
+- Step 1: Title and headings
+- Step 2: Paragraphs
+- Step 3: Adding the image
+- Step 4: Add a style tag and make the image smaller
+
+Exercise 2: Let’s add another page - HTML
+
+- Step 1: Creating another page
+- Step 2: Linking to another page, linking to another website
+- Step 3: Time to set up a form
+
+
+Exercise 3: Set up some version control and make your work public
+- Step 1: Initialize, stage, and commit code locally
+- Step 2: Create a remote git repository on Github.com
+- Step 3: Follow the instructions to push the local repo to the remote repo
+- Step 4: Add collaborators
+
+EXTRA EXERCISE (open source contribution):
+- Fork and clone the repo
+- Make a change (add the table)
+- Push and open a pull request
+
+EXTRA EXERCISE (group contribution):
+- Clone the repo
+- Create a new branch and make a change (add the table)
+- Open a pull request

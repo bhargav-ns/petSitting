@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boulder Pet-Sitters</title>
+  </head>
+
+  <body>
+    <div id="introduction">
+      <h1>Welcome to Boulder Pet-Sitters</h1>
+      <h2>We specialize in caring for cats and dogs</h2>
+      <p>
+        Our happy customers would like nothing more than to have us sitting
+        their pets!
+      </p>
+      <p>
+        We care about your pets. We also care about your wallet. You can trust
+        us to provide top-notch services at affordable rates!
+      </p>
+      <img src="../example-image.avif" style="height: 10em" />
+    </div>
+
+    <a href="./login.html">Go to Login Page</a><br />
+    <a href="https://en.wikipedia.org/wiki/Dog"> Learn more about dogs</a>
+
+    <div id="lists_and_links">
+      <h3>What we can help with</h3>
+      <ol>
+        <li>Cats</li>
+        <ul>
+          <li>Siamese</li>
+          <li>Persian</li>
+        </ul>
+        <li>Dogs</li>
+        <ul>
+          <li>Husky</li>
+          <li>Golden Retriever</li>
+          <li>German Shepherd</li>
+        </ul>
+      </ol>
+    </div>
+
+    <table style = "border: 1px solid black;">
+      <thead>
+        <tr>
+          <th>Pet Type</th>
+          <th>Breed</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dog</td>
+          <td>Siberian Husky</td>
+          <td>$500 - $1,000</td>
+        </tr>
+        <tr>
+          <td>Dog</td>
+          <td>German Shepherd</td>
+          <td>$600 - $1,500</td>
+        </tr>
+        <tr>
+          <td>Dog</td>
+          <td>Golden Retriever</td>
+          <td>$500 - $1,200</td>
+        </tr>
+        <tr>
+          <td>Cat</td>
+          <td>Siamese</td>
+          <td>$200 - $600</td>
+        </tr>
+        <tr>
+          <td>Cat</td>
+          <td>Persian</td>
+          <td>$500 - $1,500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="form">
+      <h3>Pet-Sitting Request Form</h3>
+      <form action="/submit-form" method="post" enctype="multipart/form-data">
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="pet-name">Pet's Name:</label><br />
+        <input type="text" id="pet-name" name="pet-name" required /><br />
+
+        <label for="pet-type">Pet Type:</label><br />
+        <select id="pet-type" name="pet-type" required>
+          <option value="">Select Pet Type</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option></select
+        ><br />
+
+        <label for="start-date">Start Date:</label><br />
+        <input type="date" id="start-date" name="start-date" required /><br />
+
+        <label for="end-date">End Date:</label><br />
+        <input type="date" id="end-date" name="end-date" required /><br />
+
+        <label for="additional-services">Additional Services:</label><br />
+        <input
+          type="checkbox"
+          id="grooming"
+          name="additional-services[]"
+          value="grooming"
+        />
+        <label for="grooming">Grooming</label><br />
+        <input
+          type="checkbox"
+          id="training"
+          name="additional-services[]"
+          value="training"
+        />
+        <label for="training">Training</label><br />
+        <input
+          type="checkbox"
+          id="transportation"
+          name="additional-services[]"
+          value="transportation"
+        />
+        <label for="transportation">Transportation</label><br />
+
+        <label for="communication-method">Preferred Communication Method:</label
+        ><br />
+        <input
+          type="radio"
+          id="email-communication"
+          name="communication-method"
+          value="email"
+          required
+        />
+        <label for="email-communication">Email</label><br />
+        <input
+          type="radio"
+          id="phone-communication"
+          name="communication-method"
+          value="phone"
+        />
+        <label for="phone-communication">Phone</label><br />
+        <input
+          type="radio"
+          id="text-communication"
+          name="communication-method"
+          value="text"
+        />
+        <label for="text-communication">Text</label><br />
+
+        <label for="pet-image">Pet Image:</label><br />
+        <input
+          type="file"
+          id="pet-image"
+          name="pet-image"
+          accept="image/*"
+        /><br />
+
+        <label for="notes">Additional Notes:</label><br />
+        <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br />
+
+        <input type="submit" value="Submit Request" />
+      </form>
+    </div>
+  </body>
+</html>
