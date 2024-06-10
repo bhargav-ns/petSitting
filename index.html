@@ -11,7 +11,8 @@
         <a href="https://en.wikipedia.org/wiki/Dog"> more information</a>
     </body>
     <body>
-        <form>
+        <h1>Pet-Sitting Request Form</h1>
+        <form enctype="multipart/form-data">
             <label for = "name"> Your name: </label>
             <br>
             <input type = "text" id = "name">
@@ -30,7 +31,51 @@
                 <option value = "dog"> Dog </option>
                 <option value = "other"> Other </option>
                 <option value = "N/A"> N/A </option>
-              </select>
+            </select>
+            <br>
+            <label for="start">Start date:</label>
+            <input type="date" id="start" name="job-start" min="2018-01-01"/>
+            <br>
+            <label for="end">End date:</label>
+            <input type="date" id="end" name="job-end" min="2018-01-01"/>
+            <br>
+
+            <label for = "additionalService"> Additional Services: </label> <br>
+            <input type="checkbox" id="service1" name="service1" value="grooming">
+            <label for="service1"> Grooming</label><br>
+            <input type="checkbox" id="service2" name="service2" value="training">
+            <label for="service2"> Training</label><br>
+            <input type="checkbox" id="service3" name="service3" value="transportation">
+            <label for="service3"> Transportation</label><br>
+
+            <label for = "pCommunication"> Preferred Communication Method: </label>
+            <br>
+            <div>
+                <input type="radio" id="email" name="drone" value="email" checked />
+                <label for="email">Email</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="phone" name="drone" value="phone" />
+                <label for="phone">Phone</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="text" name="drone" value="text" />
+                <label for="text">Text</label>
+              </div>
+
+              <label for="pet-image">Pet Image:</label><br>
+            <input
+                type="file"
+                id="pet-image"
+                name="pet-image"
+                accept="image/*"
+            ><br>
+
+            <label for="notes">Additional Notes:</label><br>
+            <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br>
+
             <input type = "submit" value = "Submit!">
         </form>
     </body>
