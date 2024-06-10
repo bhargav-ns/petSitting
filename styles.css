@@ -1,0 +1,10 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+#top-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
