@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Demonstration</title>
+    <style>
+      .red_class {
+        color: red;
+      }
+      .blue_class {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to JavaScript Demonstration</h1>
+    <p id="paragraph">This is a sample paragraph.</p>
+    <button id="changeButton" onclick="changeElement()">Change Elements</button>
+    <button id="removeButton">Remove Paragraph</button>
+    <button id="addButton">Add Paragraph</button>
+    <button id="changeFont">Change Font Size</button>
+
+    <script>
+      // Change all HTML elements
+      // document.getElementById("changeButton").addEventListener("click", function() {
+      //   document.getElementById("heading").innerHTML = "JavaScript Changed the Heading";
+      //   document.getElementById("paragraph").innerHTML = "JavaScript Changed the Paragraph";
+      // });
+
+      function changeElement() {
+        document.getElementById("heading").innerHTML =
+          "JavaScript Changed the Heading";
+        document.getElementById("paragraph").innerHTML =
+          "JavaScript Changed the Paragraph";
+      }
+      // Change HTML attributes
+      document.getElementById("heading").setAttribute("class", "red_class");
+
+      // Change CSS styles
+      document
+        .getElementById("changeFont")
+        .addEventListener("click", function () {
+          document.getElementById("paragraph").style.fontSize = "20px";
+        });
+
+      // Remove existing HTML elements and attributes
+      document
+        .getElementById("removeButton")
+        .addEventListener("click", function () {
+          document.getElementById("paragraph").remove();
+        });
+
+      // Add new HTML elements and attributes
+      document
+        .getElementById("addButton")
+        .addEventListener("click", function () {
+          var newParagraph = document.createElement("p");
+          newParagraph.innerHTML =
+            "This is a new paragraph added by JavaScript.";
+          newParagraph.setAttribute("class", "blue");
+          document.body.appendChild(newParagraph);
+        });
+
+      // React to existing HTML events
+      var headElem = document.getElementById("heading");
+      headElem
+        .addEventListener("mouseover", function () {
+          headElem.style.backgroundColor = "yellow";
+        });
+
+      document
+        .getElementById("heading")
+        .addEventListener("mouseout", function () {
+          this.style.backgroundColor = "white";
+        });
+
+      // // Create new HTML events
+      // var customEvent = new Event("myCustomEvent");
+      // document.addEventListener("myCustomEvent", function() {
+      //   alert("Custom event triggered!");
+      // });
+
+      // setTimeout(function() {
+      //   document.dispatchEvent(customEvent);
+      // }, 3000);
+    </script>
+  </body>
+</html>

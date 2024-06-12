@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample file</title>
+  </head>
+
+  <body>
+    <p id="date_time"></p>
+
+
+    <script>
+      var days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+      alert(days[0]);
+
+      function printToday() {
+        var today = new Date();
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+        var dateString = today.toDateString();
+        var date_time_p = document.getElementById("date_time");
+        date_time_p.innerHTML = hours + ":" + minutes + ":" + seconds;
+      }
+
+      printToday();
+      document.body.style.backgroundColor = "red";
+    </script>
+  </body>
+</html>
