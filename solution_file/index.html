@@ -2,38 +2,102 @@
 <html>
   <head>
     <title>Boulder Pet-Sitters</title>
-    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
 
   <body>
-    <div id="introduction" style="background-image: url('../example-image.avif');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Boulder Pet-Sitters</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Go to Login Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Dog"
+              >Learn more about dogs</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      id="introduction"
+      style="background-image: url('../example-image.avif')"
+    >
       <h1>Welcome to Boulder Pet-Sitters</h1>
       <h2>We specialize in caring for cats and dogs</h2>
-      <p>Our happy customers would like nothing more than to have us sitting their pets!</p>
-      <p>We care about your pets. We also care about your wallet. You can trust us to provide top-notch services at affordable rates!</p>
+      <p>
+        Our happy customers would like nothing more than to have us sitting
+        their pets!
+      </p>
+      <p>
+        We care about your pets. We also care about your wallet. You can trust
+        us to provide top-notch services at affordable rates!
+      </p>
     </div>
 
-    <a href="./login.html">Go to Login Page</a><br />
-    <a href="https://en.wikipedia.org/wiki/Dog"> Learn more about dogs</a>
+    <div class="form-check form-check-inline">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="inlineRadioOptions"
+        id="cat"
+        value="cat"
+      />
+      <label
+        class="form-check-label"
+        for="inlineRadio1"
+        style="margin-right: 5%"
+        >Cats Only</label
+      >
 
-    <div id="lists_and_links">
-      <h3>What we can help with</h3>
-      <ol>
-        <li>Cats</li>
-        <ul>
-          <li>Siamese</li>
-          <li>Persian</li>
-        </ul>
-        <li>Dogs</li>
-        <ul>
-          <li>Husky</li>
-          <li>Golden Retriever</li>
-          <li>German Shepherd</li>
-        </ul>
-      </ol>
+      <input
+        class="form-check-input"
+        type="radio"
+        name="inlineRadioOptions"
+        id="dog"
+        value="dog"
+      />
+      <label
+        class="form-check-label"
+        for="inlineRadio2"
+        style="margin-right: 5%"
+        >Dogs Only</label
+      >
+
+      <input
+        class="form-check-input"
+        type="radio"
+        name="inlineRadioOptions"
+        id="dog_cat"
+        value="dog_cat"
+      />
+      <label
+        class="form-check-label"
+        for="inlineRadio3"
+        style="margin-right: 5%"
+        >Cats and Dogs</label
+      >
     </div>
 
-    <table style = "border: 1px solid black;">
+    <table style="border: 1px solid black">
       <thead>
         <tr>
           <th>Pet Type</th>
@@ -42,29 +106,29 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="dog">
           <td>Dog</td>
-          <td>Siberian Husky</td>
+          <td id="huskey">Siberian Husky</td>
           <td>$500 - $1,000</td>
         </tr>
-        <tr>
+        <tr class="dog">
           <td>Dog</td>
-          <td>German Shepherd</td>
+          <td id="german_shephard">German Shepherd</td>
           <td>$600 - $1,500</td>
         </tr>
-        <tr>
+        <tr class="dog">
           <td>Dog</td>
-          <td>Golden Retriever</td>
+          <td id="gr">Golden Retriever</td>
           <td>$500 - $1,200</td>
         </tr>
-        <tr>
+        <tr class="cat">
           <td>Cat</td>
-          <td>Siamese</td>
+          <td id="siamese">Siamese</td>
           <td>$200 - $600</td>
         </tr>
-        <tr>
+        <tr class="cat">
           <td>Cat</td>
-          <td>Persian</td>
+          <td id="persian">Persian</td>
           <td>$500 - $1,500</td>
         </tr>
       </tbody>
@@ -157,5 +221,11 @@
         <input type="submit" value="Submit Request" />
       </form>
     </div>
+
+    <div id="js_experiments"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src = "script.js"></script>
   </body>
 </html>
