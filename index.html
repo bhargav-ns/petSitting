@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Boulder Pet-Sitters</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
@@ -16,7 +17,7 @@
         We care about your pets. We also care about your wallet. You can trust
         us to provide top-notch services at affordable rates!
       </p>
-      <img src="../example-image.avif" style="height: 10em" />
+      <img src="example-image.avif" style="height: 10em" />
     </div>
 
     <a href="./login.html">Go to Login Page</a><br />
@@ -39,7 +40,7 @@
       </ol>
     </div>
 
-    <table style = "border: 1px solid black;">
+    <table style="border: 1px solid black">
       <thead>
         <tr>
           <th>Pet Type</th>
@@ -102,52 +103,50 @@
         <input type="date" id="end-date" name="end-date" required /><br />
 
         <label for="additional-services">Additional Services:</label><br />
-        <input
-          type="checkbox"
-          id="grooming"
-          name="additional-services[]"
-          value="grooming"
-        />
-        <label for="grooming">Grooming</label><br />
-        <input
-          type="checkbox"
-          id="training"
-          name="additional-services[]"
-          value="training"
-        />
-        <label for="training">Training</label><br />
-        <input
-          type="checkbox"
-          id="transportation"
-          name="additional-services[]"
-          value="transportation"
-        />
-        <label for="transportation">Transportation</label><br />
+        <label>
+          <input
+            type="checkbox"
+            name="additional-services[]"
+            value="grooming"
+          />
+          Grooming
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="additional-services[]"
+            value="training"
+          />
+          Training
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="additional-services[]"
+            value="transportation"
+          />
+          Transportation </label
+        ><br />
 
         <label for="communication-method">Preferred Communication Method:</label
         ><br />
-        <input
-          type="radio"
-          id="email-communication"
-          name="communication-method"
-          value="email"
-          required
-        />
-        <label for="email-communication">Email</label><br />
-        <input
-          type="radio"
-          id="phone-communication"
-          name="communication-method"
-          value="phone"
-        />
-        <label for="phone-communication">Phone</label><br />
-        <input
-          type="radio"
-          id="text-communication"
-          name="communication-method"
-          value="text"
-        />
-        <label for="text-communication">Text</label><br />
+        <label>
+          <input
+            type="radio"
+            name="communication-method"
+            value="email"
+            required
+          />
+          Email
+        </label>
+        <label>
+          <input type="radio" name="communication-method" value="phone" />
+          Phone
+        </label>
+        <label>
+          <input type="radio" name="communication-method" value="text" />
+          Text </label
+        ><br />
 
         <label for="pet-image">Pet Image:</label><br />
         <input
