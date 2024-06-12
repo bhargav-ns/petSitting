@@ -6,6 +6,8 @@ function updateTableDisplay() {
   var dogRows = document.getElementsByClassName("dog");
   var catRows = document.getElementsByClassName("cat");
 
+  console.log(dogRows);
+
   if (dogRadio.checked) {
     // Display only dog rows
     for (var i = 0; i < dogRows.length; i++) {
