@@ -25,6 +25,20 @@
 
     <div id="lists_and_links">
       <h3>What we can help with</h3>
+      <div>
+        <div style="display: inline-flex;">
+          <input class="dogsNCats" type="radio" name="dogsCats" id="dogs" checked="checked">
+          <label for="dogs" id="dogsLabel">Dogs Only</label>
+        </div>
+        <div style="display: inline-flex;">
+          <input class="dogsNCats" type="radio" name="dogsCats" id="cats">
+          <label for="cats" id="catsLabel">Cats Only</label>
+        </div>
+        <div style="display: inline-flex;">
+          <input class="dogsNCats" type="radio" name="dogsCats" id="dogsAndCats">
+          <label for="dogsAndCats" id="dogsCatsLabel">Cats Only</label>
+        </div>
+      </div>
       <ol>
         <li>Cats</li>
         <ul>
@@ -162,5 +176,11 @@
         <input type="submit" value="Submit Request" />
       </form>
     </div>
+    <script>
+      document.querySelectorAll('.dogsNCats').addEventListener('change', changePicture(this.id));
+      function changePicture(id){
+        //TO-DO
+      }
+    </script>
   </body>
 </html>
